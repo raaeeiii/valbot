@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowJs": false,
+    "checkJs": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "**/*.html",
+    "**/*.js",
+    "**/*.jsx", 
+    "backend/**/*",
+    "backend/node_modules/**/*",
+    "server/**/*",
+    "scripts/**/*",
+    "node_modules/**/*",
+    "dist/**/*",
+    "**/*.d.ts"
+  ]
+}

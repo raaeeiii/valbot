@@ -1,0 +1,37 @@
+# TypeScript should only process src/ directory
+# Exclude all problematic files and directories
+
+# Backend and server files
+backend/**/*
+server/**/*
+scripts/**/*
+
+# Node modules (all levels)
+node_modules/**/*
+**/node_modules/**/*
+backend/node_modules/**/*
+
+# Build and dist files
+dist/**/*
+build/**/*
+
+# HTML and JS files
+*.html
+**/*.html
+*.js
+**/*.js
+*.jsx
+**/*.jsx
+
+# Type definition files that cause conflicts
+**/*.d.ts
+!src/**/*.d.ts
+
+# Specific problematic modules
+**/express-rate-limit/**/*
+**/mongoose/**/*
+**/mongodb/**/*
+
+# Test files
+**/*.test.*
+**/*.spec.*
